@@ -1,0 +1,152 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass-Light';
+}
+
+@font-face {
+    font-family: Overpass-Light;
+    src: url("Font/static/Overpass-Light.ttf");
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    width: 22.5rem;
+    height: 22.5rem;
+    background: radial-gradient(circle at center top, hsl(213, 19%, 18%), #171E28 50%);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.container{
+    width: inherit;
+}
+
+.container p{
+    margin: 0;
+    padding: 0;
+}
+
+.star-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    width: 3rem;
+    height: 3rem;
+}
+
+.container{
+    color:hsl(0, 0%, 100%);
+}
+
+.container p:first-child{
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.container p:last-child{
+    color: hsl(216, 12%, 54%);
+}
+
+.rate-scale{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.rate{
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(216, 12%, 54%);
+    
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    margin: auto;
+
+    transition: 0.2s ease;
+}
+
+.rate-scale li:first-child{
+    margin-left: 0;
+}
+
+.rate-scale li:last-child{
+    margin-right: 0;
+}
+
+.rate-scale li:hover{
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+#btnSubmit{
+    width: inherit;
+    height: 3rem;
+    margin: auto;
+    border-radius: 1.5rem;
+    background-color:hsl(25, 97%, 53%);
+    border: none;
+    color:hsl(0, 0%, 100%);
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+#btnSubmit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+#main-container-state2{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    width: 22.5rem;
+    height: 22.5rem;
+    background: radial-gradient(circle at center top, hsl(213, 19%, 18%), #171E28 50%);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+#main-container-state2 div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#result-paragraph{
+    color: hsl(25, 97%, 53%);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 1rem;
+}
