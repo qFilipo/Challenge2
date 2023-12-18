@@ -21,8 +21,8 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     margin: auto;
-    width: 22.5rem;
-    height: 22.5rem;
+    width: 360px;
+    height: 360px;
     background: radial-gradient(circle at center top, hsl(213, 19%, 18%), #171E28 50%);
     padding: 2rem;
     border-radius: 1.5rem;
@@ -84,6 +84,8 @@ body{
     margin: auto;
 
     transition: 0.2s ease;
+
+    cursor: default;
 }
 
 .rate-scale li:first-child{
@@ -149,4 +151,20 @@ body{
     padding: 0.5rem 1.5rem;
     background-color: hsl(213, 19%, 18%);
     border-radius: 1rem;
+}
+
+@media (max-width: 425px){
+    body{
+        padding: 0 2rem;
+    }
+
+    .main-container{
+        width: 75vw;
+        margin: auto 2.5vw;
+    }
+
+    #main-container-state2{
+        width: 75vw;
+        margin: auto 2.5vw;
+    }
 }
